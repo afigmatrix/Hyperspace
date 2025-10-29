@@ -1,0 +1,20 @@
+﻿@model AboutLoadVM
+@{
+    Layout = null;
+}
+<div class="col-md-6 mb-2 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+    <div class="feature-item border h-100">
+        <div class="feature-icon btn-xxl-square bg-primary mb-4 mt-n4">
+            <i class="fa fa-hammer fa-2x text-white"></i>
+        </div>
+        <div class="p-5 pt-0">
+            <h5 class="text-uppercase mb-3">@Model.Name</h5>
+            <p>@Model.Desc</p>
+            <a class="position-relative text-body text-uppercase small d-flex justify-content-between"
+               href="#">
+                <b class="bg-white pe-3">Read More</b> <i class="bi bi-arrow-right bg-white ps-3"></i>
+            </a>
+            @Model.AddressInfo.IsActive
+        </div>
+    </div>
+</div>
