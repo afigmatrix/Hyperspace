@@ -16,12 +16,21 @@ namespace Hyperspace.Controllers
 
         public IActionResult Index()
         {
-            return View();
+
+            return View(new ForPartial()
+            {
+                 Name = "Matrix Academy 2025",
+                 Age = 10
+            });
         }
 
         public IActionResult Privacy()
         {
-            return View();
+            return View(new ForPartial()
+            {
+                Name = "Matrix Academy 2025",
+                Age = 15
+            });
         }
 
         public IActionResult Contact()
